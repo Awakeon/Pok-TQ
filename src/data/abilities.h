@@ -2408,4 +2408,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_ENHANCED_CPU] =
+    {
+        .name = _("Enhanced CPU"),
+        .description = COMPOUND_STRING("Becomes stronger in Hail/Snow."),
+        .aiRating = 5,
+    },
 };
