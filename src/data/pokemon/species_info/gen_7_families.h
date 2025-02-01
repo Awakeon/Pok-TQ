@@ -23,7 +23,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LONG_REACH },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Rowlet"),
         .cryId = CRY_ROWLET,
         .natDexNum = NATIONAL_DEX_ROWLET,
         .categoryName = _("Grass Quill"),
@@ -4121,12 +4120,12 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
 #define SILVALLY_SPECIES_INFO(type, _palette)                                       \
     {                                                                               \
-        .baseHP        = 100,                                                        \
+        .baseHP        = 120,                                                        \
         .baseAttack    = 120,                                                        \
         .baseDefense   = 85,                                                        \
         .baseSpeed     = 90,                                                        \
         .baseSpAttack  = 120,                                                        \
-        .baseSpDefense = 85,                                                        \
+        .baseSpDefense = 80,                                                        \
         .types = MON_TYPES(type),                                                   \
         .catchRate = 3,                                                             \
         .expYield = 257,                                                            \

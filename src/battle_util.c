@@ -9583,6 +9583,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (moveType == ItemId_GetSecondaryId(gBattleMons[battlerAtk].item))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
+    case HOLD_EFFECT_MEMORY:
+        if (moveType == ItemId_GetSecondaryId(gBattleMons[battlerAtk].item))
+            modifier = uq4_12_multiply(modifier, holdEffectModifier);
+        break;
     case HOLD_EFFECT_PUNCHING_GLOVE:
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.1));
