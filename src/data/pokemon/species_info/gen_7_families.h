@@ -1345,7 +1345,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_IRON_FIST, ABILITY_ANGER_POINT },
+        .abilities = { ABILITY_THERMAL_EXCHANGE, ABILITY_IRON_FIST, ABILITY_ANGER_POINT },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Crabominable"),
         .cryId = CRY_CRABOMINABLE,
@@ -2154,7 +2154,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 #if P_FAMILY_WISHIWASHI
     [SPECIES_WISHIWASHI_SOLO] =
     {
-        .baseHP        = 45,
+        .baseHP        = 65,
         .baseAttack    = 20,
         .baseDefense   = 20,
         .baseSpeed     = 40,
@@ -2219,7 +2219,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_WISHIWASHI_SCHOOL] =
     {
-        .baseHP        = 45,
+        .baseHP        = 65,
         .baseAttack    = 140,
         .baseDefense   = 130,
         .baseSpeed     = 30,
@@ -4122,7 +4122,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
     {                                                                               \
         .baseHP        = 120,                                                        \
         .baseAttack    = 120,                                                        \
-        .baseDefense   = 85,                                                        \
+        .baseDefense   = 80,                                                        \
         .baseSpeed     = 90,                                                        \
         .baseSpAttack  = 120,                                                        \
         .baseSpDefense = 80,                                                        \
