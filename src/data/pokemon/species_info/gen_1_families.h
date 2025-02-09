@@ -6,11 +6,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_BULBASAUR
     [SPECIES_BULBASAUR] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 49,
-        .baseDefense   = 49,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 65,
+        .baseHP        = 60,
+        .baseAttack    = 53,
+        .baseDefense   = 53,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 69,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,
@@ -21,7 +21,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_OVERGROW, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bulbasaur"),
         .cryId = CRY_BULBASAUR,
@@ -64,14 +64,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sBulbasaurLevelUpLearnset,
         .teachableLearnset = sBulbasaurTeachableLearnset,
         .eggMoveLearnset = sBulbasaurEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IVYSAUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_IVYSAUR}),
     },
 
     [SPECIES_IVYSAUR] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 62,
-        .baseDefense   = 63,
+        .baseHP        = 70,
+        .baseAttack    = 73,
+        .baseDefense   = 67,
         .baseSpeed     = 60,
         .baseSpAttack  = 80,
         .baseSpDefense = 80,
@@ -85,7 +85,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_OVERGROW, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Ivysaur"),
         .cryId = CRY_IVYSAUR,
@@ -132,8 +132,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_VENUSAUR] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 82,
+        .baseHP        = 90,
+        .baseAttack    = 92,
         .baseDefense   = 83,
         .baseSpeed     = 80,
         .baseSpAttack  = 100,
@@ -154,7 +154,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_OVERGROW, ABILITY_THICK_FAT, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Venusaur"),
         .cryId = CRY_VENUSAUR,
@@ -215,12 +215,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_VENUSAUR_MEGA] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 100,
+        .baseHP        = 90,
+        .baseAttack    = 118,
         .baseDefense   = 123,
         .baseSpeed     = 80,
         .baseSpAttack  = 122,
-        .baseSpDefense = 120,
+        .baseSpDefense = 112,
         .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 313 : 281,
@@ -333,10 +333,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_CHARMANDER
     [SPECIES_CHARMANDER] =
     {
-        .baseHP        = 39,
+        .baseHP        = 45,
         .baseAttack    = 62,
-        .baseDefense   = 43,
-        .baseSpeed     = 65,
+        .baseDefense   = 48,
+        .baseSpeed     = 70,
         .baseSpAttack  = 60,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_FIRE),
@@ -397,11 +397,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_CHARMELEON] =
     {
         .baseHP        = 58,
-        .baseAttack    = 74,
-        .baseDefense   = 58,
+        .baseAttack    = 73,
+        .baseDefense   = 60,
         .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 65,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 45,
         .expYield = 142,
@@ -586,7 +586,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     {
         .baseHP        = 78,
         .baseAttack    = 104,
-        .baseDefense   = 78,
+        .baseDefense   = 88,
         .baseSpeed     = 100,
         .baseSpAttack  = 159,
         .baseSpDefense = 115,
