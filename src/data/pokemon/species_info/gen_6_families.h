@@ -6,7 +6,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #if P_FAMILY_CHESPIN
     [SPECIES_CHESPIN] =
     {
-        .baseHP        = 56,
+        .baseHP        = 76,
         .baseAttack    = 61,
         .baseDefense   = 65,
         .baseSpeed     = 38,
@@ -69,7 +69,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_QUILLADIN] =
     {
-        .baseHP        = 61,
+        .baseHP        = 78,
         .baseAttack    = 78,
         .baseDefense   = 95,
         .baseSpeed     = 57,
@@ -131,11 +131,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_CHESNAUGHT] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 107,
-        .baseDefense   = 122,
+        .baseHP        = 98,
+        .baseAttack    = 127,
+        .baseDefense   = 112,
         .baseSpeed     = 64,
-        .baseSpAttack  = 74,
+        .baseSpAttack  = 64,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
         .catchRate = 45,
@@ -2134,7 +2134,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #define FURFROU_MISC_INFO(_form, _noFlip, frontWidth, frontYOffset, backWidth, backYOffset, _iconIdx)   \
     {                                                                                                   \
         .baseHP        = 75,                                                                            \
-        .baseAttack    = 80,                                                                            \
+        .baseAttack    = 100,                                                                            \
         .baseDefense   = 60,                                                                            \
         .baseSpeed     = 102,                                                                           \
         .baseSpAttack  = 65,                                                                            \
@@ -2412,7 +2412,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_NO_GUARD, ABILITY_SHARPNESS, ABILITY_NONE },
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Honedge"),
         .cryId = CRY_HONEDGE,
@@ -2519,10 +2519,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sDoubladeLevelUpLearnset,
         .teachableLearnset = sDoubladeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_AEGISLASH_SHIELD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_AEGISLASH_SHIELD}),
     },
 
-#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 140 : 150)
+#define AEGISLASH_MAIN_STAT (P_UPDATED_STATS >= GEN_8 ? 150 : 150)
 
     [SPECIES_AEGISLASH_SHIELD] =
     {
@@ -3052,7 +3052,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Binacle"),
         .cryId = CRY_BINACLE,
@@ -3103,7 +3103,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseHP        = 72,
         .baseAttack    = 105,
         .baseDefense   = 115,
-        .baseSpeed     = 68,
+        .baseSpeed     = 78,
         .baseSpAttack  = 54,
         .baseSpDefense = 86,
         .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
@@ -3115,7 +3115,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_PICKPOCKET },
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
         .speciesName = _("Barbaracle"),
@@ -4195,7 +4195,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 83,
         .baseSpDefense = 113,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
         .catchRate = 45,
         .expYield = 158,
         .evYield_SpDefense = 2,
@@ -4452,7 +4452,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_TREVENANT] =
     {
-        .baseHP        = 105,
+        .baseHP        = 112,
         .baseAttack    = 110,
         .baseDefense   = 76,
         .baseSpeed     = 56,
