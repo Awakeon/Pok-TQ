@@ -7443,11 +7443,11 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_EMOLGA
     [SPECIES_EMOLGA] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
-        .baseSpeed     = 103,
-        .baseSpAttack  = 75,
+        .baseHP        = 60,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
+        .baseSpeed     = 123,
+        .baseSpAttack  = 90,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
         .catchRate = 200,
