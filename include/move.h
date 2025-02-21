@@ -90,6 +90,7 @@ struct MoveInfo
     bool32 ignoresSubstitute:1;
     bool32 forcePressure:1;
     bool32 cantUseTwice:1;
+    bool32 vineMove:1;
     // Ban flags
     bool32 gravityBanned:1;
     bool32 mirrorMoveBanned:1;
@@ -310,6 +311,11 @@ static inline bool32 IsSlicingMove(u32 moveId)
 static inline bool32 IsHealingMove(u32 moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].healingMove;
+}
+
+static inline bool32 IsVineMove(u32 moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].vineMove;
 }
 
 static inline bool32 MoveIncreasesPowerToMinimizedTargets(u32 moveId)
