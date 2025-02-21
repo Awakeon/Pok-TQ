@@ -51,7 +51,57 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(GRAVITY) \
+    F(EARTH_POWER) \
+    F(BUG_BUZZ) \
+    F(DAZZLING_GLEAM) \
+    F(ICY_WIND) \
+    F(PLAY_ROUGH) \
+    F(U_TURN) \
+    F(STOMPING_TANTRUM) \
+    F(PIN_MISSILE) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) \
+    F(THUNDER_PUNCH) \
+    F(ELECTROWEB) \
+    F(DRAINING_KISS) \
+    F(POWER_GEM) \
+    F(DARK_PULSE) \
+    F(POISON_JAB) \
+    F(DRAGON_PULSE) \
+    F(WILD_CHARGE) \
+    F(VOLT_SWITCH) \
+    F(LEECH_LIFE) \
+    F(PSYCHIC_NOISE) \
+    F(DUAL_WINGBEAT) \
+    F(LOW_KICK) \
+    F(CRUNCH) \
+    F(AIR_SLASH) \
+    F(HEX) \
+    F(METAL_CLAW) \
+    F(BODY_PRESS) \
+    F(FLASH_CANNON) \
+    F(PSYSHOCK) \
+    F(DRAIN_PUNCH) \
+    F(ZEN_HEADBUTT) \
+    F(TRAILBLAZE) \
+    F(BEAT_UP) \
+    F(HELPING_HAND) \
+    F(ICICLE_SPEAR) \
+    F(HEAVY_SLAM) \
+    F(SOLAR_BLADE) \
+    F(NIGHT_SLASH) \
+    F(NASTY_PLOT) \
+    F(STORED_POWER) \
+    F(DRACO_METEOR) \
+    F(POLLEN_PUFF) \
+    F(SUPERCELL_SLAM) \
+    F(SCALE_SHOT) \
+    F(FOCUS_BLAST) \
+    F(STONE_EDGE) \
+    F(GRASS_KNOT) \
+    F(X_SCISSOR) 
 
 #define FOREACH_HM(F) \
     F(CUT) \

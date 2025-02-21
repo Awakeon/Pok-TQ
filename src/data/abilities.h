@@ -2408,4 +2408,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_SPIKED_VINES] =
+    {
+        .name = _("Spiked Vines"),
+        .description = COMPOUND_STRING("Doubles the power of Vine moves."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_LUNAR_ENERGY] =
+    {
+        .name = _("Spiked Vines"),
+        .description = COMPOUND_STRING("Doubles the power of Vine moves."),
+        .aiRating = 8,
+    },
 };
