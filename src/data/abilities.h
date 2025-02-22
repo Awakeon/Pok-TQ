@@ -2418,7 +2418,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_LUNAR_ENERGY] =
     {
-        .name = _("Spiked Vines"),
+        .name = _("Lunar Energy"),
         .description = COMPOUND_STRING("Doubles the power of Vine moves."),
         .aiRating = 8,
     },
