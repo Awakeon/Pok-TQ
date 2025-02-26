@@ -6616,9 +6616,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_NUMEL
     [SPECIES_NUMEL] =
     {
-        .baseHP        = 60,
+        .baseHP        = 90,
         .baseAttack    = 60,
-        .baseDefense   = 40,
+        .baseDefense   = 45,
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
         .baseSpDefense = 45,
@@ -6703,11 +6703,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_CAMERUPT] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 100,
-        .baseDefense   = 70,
+        .baseHP        = 110,
+        .baseAttack    = 90,
+        .baseDefense   = 75,
         .baseSpeed     = 40,
-        .baseSpAttack  = 105,
+        .baseSpAttack  = 110,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
         .catchRate = 150,
@@ -6794,12 +6794,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_CAMERUPT_MEGA] =
     {
-        .baseHP        = 70,
+        .baseHP        = 110,
         .baseAttack    = 120,
-        .baseDefense   = 100,
+        .baseDefense   = 105,
         .baseSpeed     = 20,
         .baseSpAttack  = 145,
-        .baseSpDefense = 105,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
         .catchRate = 150,
         .expYield = 196,
@@ -7017,12 +7017,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_GRUMPIG] =
     {
-        .baseHP        = 80,
+        .baseHP        = 100,
         .baseAttack    = 45,
         .baseDefense   = 65,
         .baseSpeed     = 80,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 110,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 165 : 164,
@@ -7164,13 +7164,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_TRAPINCH
     [SPECIES_TRAPINCH] =
     {
-        .baseHP        = 45,
+        .baseHP        = 55,
         .baseAttack    = 100,
-        .baseDefense   = 45,
+        .baseDefense   = 75,
         .baseSpeed     = 10,
         .baseSpAttack  = 45,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND),
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_BUG),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 73,
         .evYield_Attack = 1,
@@ -7184,7 +7184,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ARENA_TRAP, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ARENA_TRAP, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Trapinch"),
         .cryId = CRY_TRAPINCH,
@@ -7234,17 +7234,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTrapinchLevelUpLearnset,
         .teachableLearnset = sTrapinchTeachableLearnset,
         .eggMoveLearnset = sTrapinchEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_VIBRAVA}),
     },
 
     [SPECIES_VIBRAVA] =
     {
-        .baseHP        = 50,
+        .baseHP        = 70,
         .baseAttack    = 70,
-        .baseDefense   = 50,
+        .baseDefense   = 75,
         .baseSpeed     = 70,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 126,
@@ -7316,10 +7316,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_FLYGON] =
     {
         .baseHP        = 80,
-        .baseAttack    = 100,
-        .baseDefense   = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
         .baseSpeed     = 100,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 120,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
         .catchRate = 45,
