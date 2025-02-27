@@ -106,6 +106,7 @@ static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_DRAGON_PULSE),
     LEVEL_UP_MOVE(32, MOVE_DRAGON_CLAW),
     LEVEL_UP_MOVE(36, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(38, MOVE_F),
     LEVEL_UP_END
 };
 
@@ -125,7 +126,7 @@ static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_G_MAX_WILDFIRE),
+    LEVEL_UP_MOVE( 0, MOVE_G_MAX_WILD_FIRE),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 3, MOVE_EMBER),
