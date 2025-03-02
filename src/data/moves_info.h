@@ -7917,7 +7917,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks with thorny arms.\n"
             "May cause flinching."),
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 85,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -8033,7 +8033,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-            .chance = 50,
+            .chance = 60,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
         .contestCategory = CONTEST_CATEGORY_COOL,
