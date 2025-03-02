@@ -14830,7 +14830,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_FAIRY,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
@@ -14854,7 +14854,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Stirs up a fairy wind to\n"
             "strike the foe."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 55,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 30,
