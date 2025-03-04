@@ -17947,8 +17947,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Blade"),
         .description = COMPOUND_STRING(
-            "Strikes as a sword. Deals 2x\n"
-            "damage to Dynamaxed foes."),
+            "Strikes as a sword. Ignores\n"
+            "defense boosts."),
         .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
         .power = 110,
         .type = TYPE_STEEL,
@@ -17958,6 +17958,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
+        .ignoresTargetDefenseEvasionStages = TRUE,
         .slicingMove = TRUE,
         .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
@@ -17971,15 +17972,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Behemoth Bash"),
         .description = COMPOUND_STRING(
-            "Attacks as a shield. Deals 2x\n"
-            "damage to Dynamaxed foes."),
-        .effect = EFFECT_DYNAMAX_DOUBLE_DMG,
+            "Attacks as a shield. +2\n"
+            "Priortiy."),
+        .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_STEEL,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 3,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
+        .priority = 2,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .assistBanned = B_EXTRAPOLATED_MOVE_FLAGS,
