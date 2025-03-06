@@ -2364,7 +2364,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
 
     [SPECIES_WISHIWASHI_SCHOOL] =
     {
-        .baseHP        = 65,
+        .baseHP        = 110,
         .baseAttack    = 140,
         .baseDefense   = 130,
         .baseSpeed     = 30,
