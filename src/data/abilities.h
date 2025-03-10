@@ -41,7 +41,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_STURDY] =
     {
         .name = _("Sturdy"),
-        .description = COMPOUND_STRING("Negates 1-hit KO attacks."),
+        .description = COMPOUND_STRING("Negates 1-hit KO attacks.\nWill survive any hit from full HP."),
         .aiRating = 6,
         .breakable = TRUE,
     },
@@ -80,7 +80,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_VOLT_ABSORB] =
     {
         .name = _("Volt Absorb"),
-        .description = COMPOUND_STRING("Turns electricity into HP."),
+        .description = COMPOUND_STRING("Turns electricity into HP,\nRestores 25% HP."),
         .aiRating = 7,
         .breakable = TRUE,
     },
@@ -88,7 +88,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_WATER_ABSORB] =
     {
         .name = _("Water Absorb"),
-        .description = COMPOUND_STRING("Changes water into HP."),
+        .description = COMPOUND_STRING("Changes water into HP,\nRestores 25% HP."),
         .aiRating = 7,
         .breakable = TRUE,
     },
@@ -141,7 +141,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FLASH_FIRE] =
     {
         .name = _("Flash Fire"),
-        .description = COMPOUND_STRING("Powers up if hit by fire."),
+        .description = COMPOUND_STRING("Powers up by 50% if hit by fire."),
         .aiRating = 6,
         .breakable = TRUE,
     },
@@ -149,7 +149,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SHIELD_DUST] =
     {
         .name = _("Shield Dust"),
-        .description = COMPOUND_STRING("Prevents added effects."),
+        .description = COMPOUND_STRING("Prevents secondary effects."),
         .aiRating = 5,
         .breakable = TRUE,
     },
@@ -287,7 +287,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_HUGE_POWER] =
     {
         .name = _("Huge Power"),
-        .description = COMPOUND_STRING("Raises Attack."),
+        .description = COMPOUND_STRING("Doubles Attack stat."),
         .aiRating = 10,
     },
 
@@ -398,7 +398,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_HYPER_CUTTER] =
     {
         .name = _("Hyper Cutter"),
-        .description = COMPOUND_STRING("Prevents Attack reduction."),
+        .description = COMPOUND_STRING("Attack cannot be reduced, Ignores-\nBurn. 20% boost to slicing moves"),
         .aiRating = 3,
         .breakable = TRUE,
     },
@@ -799,7 +799,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ANTICIPATION] =
     {
         .name = _("Anticipation"),
-        .description = COMPOUND_STRING("Senses dangerous moves."),
+        .description = COMPOUND_STRING("Senses dangerous moves. Reduces\nSuper effective damage by 25%"),
         .aiRating = 2,
     },
 
@@ -1397,7 +1397,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DARK_AURA] =
     {
         .name = _("Dark Aura"),
-        .description = COMPOUND_STRING("Boosts Dark moves."),
+        .description = COMPOUND_STRING("Boosts everyones Dark moves."),
         .aiRating = 6,
     },
 
@@ -2061,7 +2061,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_THERMAL_EXCHANGE] =
     {
         .name = _("Thermal Exchange"),
-        .description = COMPOUND_STRING("Fire hits up Attack."),
+        .description = COMPOUND_STRING("Fire hits up Attack\n70% fire resistance."),
         .aiRating = 4,
         .breakable = TRUE,
     },
@@ -2069,7 +2069,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ANGER_SHELL] =
     {
         .name = _("Anger Shell"),
-        .description = COMPOUND_STRING("Gets angry at half HP."),
+        .description = COMPOUND_STRING("Boost attack and speed at half HP\nbut lowers defenses."),
         .aiRating = 3,
     },
 
@@ -2280,7 +2280,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_EARTH_EATER] =
     {
         .name = _("Earth Eater"),
-        .description = COMPOUND_STRING("Eats ground to heal HP."),
+        .description = COMPOUND_STRING("Eats ground to heal HP,\nRestores 25% HP."),
         .aiRating = 7,
         .breakable = TRUE,
     },
@@ -2423,10 +2423,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
-    [ABILITY_RADIANCE] =
+    [ABILITY_HOT_IRON] =
     {
-        .name = _("Radiance"),
-        .description = COMPOUND_STRING("Normal moves become Fairy then boosts them by 1.2x."),
+        .name = _("Hot Iron"),
+        .description = COMPOUND_STRING("Normal moves become Fire.\nand are boosted by 50%."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_SOOTHING_AROMA] =
+    {
+        .name = _("Soothing Aroma"),
+        .description = COMPOUND_STRING("Calms everyone on the field,\nlowering their attack by 25%."),
         .aiRating = 8,
     },
 };
