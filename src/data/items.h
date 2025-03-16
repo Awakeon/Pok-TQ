@@ -1320,6 +1320,7 @@ const struct Item gItemsInfo[] =
             "Pokémon."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
+        .importance = 1,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Protein,
         .flingPower = 30,
