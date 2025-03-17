@@ -408,7 +408,7 @@ static const u8 sText_PkmnSkills[]                          = _("POKéMON SKILLS
 static const u8 sText_BattleMoves[]                         = _("BATTLE MOVES");
 static const u8 sText_ContestMoves[]                        = _("CONTEST MOVES");
 static const u8 sText_Info[]                                = _("INFO");
-static const u8 sText_ViewIVs[]                             = _("VIEW IV");
+static const u8 sText_ViewIVs[]                             = _("VIEW EV");
 static const u8 sText_ViewEVs[]                             = _("VIEW EV");
 static const u8 sText_ViewStats[]                           = _("VIEW STATS");
 static const u8 sText_ViewIVs_Graded[]                      = _("SEE INNATE");
@@ -2369,16 +2369,10 @@ static void ChangeSummaryState(s16 *data, u8 taskId)
     switch (tSkillsState)
     {
     case SKILL_STATE_STATS:
-        tSkillsState = SKILL_STATE_IVS;
-        break;
-    case SKILL_STATE_IVS:
         tSkillsState = SKILL_STATE_EVS;
         break;
     case SKILL_STATE_EVS:
-        if (BW_SUMMARY_IV_EV_DISPLAY == BW_IV_EV_GRADED)
-            tSkillsState = SKILL_STATE_IVS;
-        else
-            tSkillsState = SKILL_STATE_STATS;
+        tSkillsState = SKILL_STATE_STATS;
         break;
     }
 
