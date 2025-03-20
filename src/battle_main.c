@@ -6039,6 +6039,10 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_WATER;
     }
+    else if (IsSoundMove(move) && ability == ABILITY_SEISMIC_WAVES)
+    {
+        return TYPE_GROUND;
+    }
     else if (moveEffect == EFFECT_AURA_WHEEL && species == SPECIES_MORPEKO_HANGRY)
     {
         return TYPE_DARK;

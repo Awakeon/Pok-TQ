@@ -2436,4 +2436,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Calms everyone on the field,\nlowering their attack by 25%."),
         .aiRating = 8,
     },
+
+    [ABILITY_SEISMIC_WAVES] =
+    {
+        .name = _("Seismic Waves"),
+        .description = COMPOUND_STRING("Makes sound moves Ground\nSound moves hit Flying types."),
+        .aiRating = 5,
+    },
+
 };

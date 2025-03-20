@@ -10325,9 +10325,18 @@ static inline uq4_12_t GetAttackerAbilitiesModifier(u32 battlerAtk, uq4_12_t typ
         if (typeEffectivenessModifier <= UQ_4_12(0.5))
             return UQ_4_12(2.0);
         break;
+    
+    return UQ_4_12(1.0);
+
+    case ABILITY_SEISMIC_WAVES:
+        if (typeEffectivenessModifier <= UQ_4_12(0.0))
+            return UQ_4_12(2.0);
+        break;
     }
     return UQ_4_12(1.0);
+
 }
+
 
 static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 battlerAtk, u32 battlerDef, uq4_12_t typeEffectivenessModifier, u32 abilityDef)
 {

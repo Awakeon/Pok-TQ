@@ -152,7 +152,7 @@
             },
             {
 #line 142
-            .species = SPECIES_KINGAMBIT,
+            .species = SPECIES_WO_CHIEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 142
             .heldItem = ITEM_CHOPLE_BERRY,
@@ -188,7 +188,7 @@
 #line 157
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 158
-            .ability = ABILITY_PROTOSYNTHESIS,
+            .ability = ABILITY_LEVITATE,
 #line 156
             .lvl = 100,
 #line 160
@@ -215,7 +215,7 @@
 #line 169
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 170
-            .ability = ABILITY_PROTOSYNTHESIS,
+            .ability = ABILITY_LEVITATE,
 #line 168
             .lvl = 100,
 #line 172
