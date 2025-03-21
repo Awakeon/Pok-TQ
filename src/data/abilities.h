@@ -2443,5 +2443,4 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Makes sound moves Ground\nSound moves hit Flying types."),
         .aiRating = 5,
     },
-
 };
