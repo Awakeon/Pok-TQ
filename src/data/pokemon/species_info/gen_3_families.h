@@ -1858,12 +1858,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_LOTAD
     [SPECIES_LOTAD] =
     {
-        .baseHP        = 40,
+        .baseHP        = 55,
         .baseAttack    = 30,
-        .baseDefense   = 30,
+        .baseDefense   = 45,
         .baseSpeed     = 30,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 50,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 44 : 74,
@@ -1923,17 +1923,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLotadLevelUpLearnset,
         .teachableLearnset = sLotadTeachableLearnset,
         .eggMoveLearnset = sLotadEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LOMBRE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LOMBRE}),
     },
 
     [SPECIES_LOMBRE] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 70,
         .baseSpeed     = 50,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
         .catchRate = 120,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 141,
@@ -1944,7 +1944,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_OWN_TEMPO },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_PRANKSTER, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Lombre"),
         .cryId = CRY_LOMBRE,
@@ -1994,17 +1994,17 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sLombreLevelUpLearnset,
         .teachableLearnset = sLombreTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_LUDICOLO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_LUDICOLO}),
     },
 
     [SPECIES_LUDICOLO] =
     {
         .baseHP        = 80,
-        .baseAttack    = 70,
+        .baseAttack    = 90,
         .baseDefense   = 70,
         .baseSpeed     = 70,
         .baseSpAttack  = 90,
-        .baseSpDefense = 100,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
