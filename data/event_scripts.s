@@ -1156,3 +1156,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/Route135/scripts.inc"
+
+	.include "data/maps/RyadoTown/scripts.inc"
+
+	.include "data/maps/Route136/scripts.inc"
+
+	.include "data/maps/RyadoCave/scripts.inc"
+
+	.include "data/maps/Route137/scripts.inc"
