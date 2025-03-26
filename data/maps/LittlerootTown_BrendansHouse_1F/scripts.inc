@@ -288,8 +288,12 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "MOM: See, {PLAYER}?\n"
-	.string "Isn't it nice in here, too?$"
+	.string "UNCLE: Dont get used to it,\n"
+	.string "{PLAYER} this maybe your home but\p"
+	.string "You can't stay here and get those\n"
+	.string "Gym badges at the same time!\p"
+	.string "In your room there are\n"
+	.string "2 pokeballs, take them both.$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 	.string "The mover's POKéMON do all the work\n"

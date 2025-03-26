@@ -1,4 +1,5 @@
 .set LOCALID_RIVAL, 1
+.set LOCALID_POKE_BALL, 2
 
 LittlerootTown_BrendansHouse_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_BrendansHouse_2F_OnTransition
@@ -126,6 +127,25 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 	applymovement LOCALID_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCEast
 	waitmovement 0
 	return
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1::
+    setflag      FLAG_SYS_POKEMON_GET
+    msgbox PlayersHouse_Starter_Ball, MSGBOX_SIGN
+	random 2
+	goto_if_eq VAR_RESULT, 1, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_A
+	goto LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_B
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_A::
+    givemon      SPECIES_CHIKORITA, 5
+	removeobject VAR_LAST_TALKED
+    setflag      FLAG_HIDE_STARTER_BALL_1
+    end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_B::
+   givemon SPECIES_LITTEN, 5
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2::
 
 LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters:
 	walk_down
@@ -302,3 +322,6 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is connected to\n"
 	.string "serve as the Controller.$"
+
+PlayersHouse_Starter_Ball:
+    .string "It's a pokeball.$"

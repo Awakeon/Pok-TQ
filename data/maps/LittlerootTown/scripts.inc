@@ -910,22 +910,18 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	return
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
-	.string "MOM: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
-	.string "Well, this is LITTLEROOT TOWN.\p"
-	.string "How do you like it?\n"
-	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
-	.string "Let's go inside.$"
+	.string "UNCLE: {PLAYER}, You're here, finally!\p"
+	.string "I bet it was rough being in that truck.\n"
+	.string "This is CEROSI TOWN, your new home!\p"
+	.string "Your Mom already told about the\n"
+	.string "thing you wanted to do.\p"
+	.string "lets handle that first, {PLAYER}.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "MOM: Wait, {PLAYER}!$"
+	.string "UNCLE: Wait, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "MOM: {PLAYER}! {PLAYER}! Did you\n"
+	.string "UNCLE: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
 	.string "You got it from PROF. BIRCH. How nice!\p"
