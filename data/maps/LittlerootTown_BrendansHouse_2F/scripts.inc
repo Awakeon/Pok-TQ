@@ -129,23 +129,296 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanEast::
 	return
 
 LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1::
-    setflag      FLAG_SYS_POKEMON_GET
+    setflag FLAG_SYS_POKEMON_GET
     msgbox PlayersHouse_Starter_Ball, MSGBOX_SIGN
-	random 2
+	random 20
 	goto_if_eq VAR_RESULT, 1, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_A
-	goto LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_B
+	goto_if_eq VAR_RESULT, 2, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_B
+	goto_if_eq VAR_RESULT, 3, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_C
+	goto_if_eq VAR_RESULT, 4, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_D
+	goto_if_eq VAR_RESULT, 5, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_E
+	goto_if_eq VAR_RESULT, 6, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_F
+	goto_if_eq VAR_RESULT, 7, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_G
+	goto_if_eq VAR_RESULT, 8, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_H
+	goto_if_eq VAR_RESULT, 9, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_I
+	goto_if_eq VAR_RESULT, 10, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_J
+	goto_if_eq VAR_RESULT, 11, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_K
+	goto_if_eq VAR_RESULT, 12, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_L
+	goto_if_eq VAR_RESULT, 13, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_M
+	goto_if_eq VAR_RESULT, 14, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_N
+	goto_if_eq VAR_RESULT, 15, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_O
+	goto_if_eq VAR_RESULT, 16, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_P
+	goto_if_eq VAR_RESULT, 17, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_Q
+	goto_if_eq VAR_RESULT, 18, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_R
+	goto_if_eq VAR_RESULT, 19, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_S
+	goto  LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_T
+
 
 LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_A::
-    givemon      SPECIES_CHIKORITA, 5
+    givemon SPECIES_CHIKORITA, 10
 	removeobject VAR_LAST_TALKED
-    setflag      FLAG_HIDE_STARTER_BALL_1
+    setflag FLAG_HIDE_STARTER_BALL_1
     end
 
 LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_B::
-   givemon SPECIES_LITTEN, 5
+   givemon      SPECIES_LITTEN, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_C::
+   givemon      SPECIES_AXEW, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_D::
+   givemon      SPECIES_TEPIG, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_E::
+   givemon      SPECIES_SWINUB, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_F::
+   givemon      SPECIES_SOLOSIS, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_G::
+   givemon      SPECIES_SPHEAL, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_H::
+   givemon      SPECIES_BUDEW, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_I::
+   givemon      SPECIES_VENIPEDE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_J::
+   givemon      SPECIES_TYNAMO, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_K::
+   givemon      SPECIES_TOTODILE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_L::
+   givemon      SPECIES_ROWLET, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_M::
+   givemon      SPECIES_LITWICK, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_N::
+   givemon      SPECIES_ELEKID, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_O::
+   givemon      SPECIES_RHYHORN, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_P::
+   givemon      SPECIES_CHESPIN, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_Q::
+   givemon      SPECIES_NACLI, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_R::
+   givemon      SPECIES_SLAKOTH, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_S::
+   givemon      SPECIES_KLINK, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_1_T::
+   givemon      SPECIES_PAWNIARD, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
    end
 
 LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2::
+    setflag FLAG_SYS_POKEMON_GET
+    msgbox PlayersHouse_Starter_Ball, MSGBOX_SIGN
+	random 20
+	goto_if_eq VAR_RESULT, 1, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_A
+	goto_if_eq VAR_RESULT, 2, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_B
+	goto_if_eq VAR_RESULT, 3, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_C
+	goto_if_eq VAR_RESULT, 4, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_D
+	goto_if_eq VAR_RESULT, 5, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_E
+	goto_if_eq VAR_RESULT, 6, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_F
+	goto_if_eq VAR_RESULT, 7, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_G
+	goto_if_eq VAR_RESULT, 8, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_H
+	goto_if_eq VAR_RESULT, 9, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_I
+	goto_if_eq VAR_RESULT, 10, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_J
+	goto_if_eq VAR_RESULT, 11, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_K
+	goto_if_eq VAR_RESULT, 12, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_L
+	goto_if_eq VAR_RESULT, 13, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_M
+	goto_if_eq VAR_RESULT, 14, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_N
+	goto_if_eq VAR_RESULT, 15, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_O
+	goto_if_eq VAR_RESULT, 16, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_P
+	goto_if_eq VAR_RESULT, 17, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_Q
+	goto_if_eq VAR_RESULT, 18, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_R
+	goto_if_eq VAR_RESULT, 19, LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_S
+	goto  LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_T
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_A::
+    givemon SPECIES_STARLY, 10
+	removeobject VAR_LAST_TALKED
+    setflag FLAG_HIDE_STARTER_BALL_1
+    end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_B::
+   givemon      SPECIES_GIBLE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_C::
+   givemon      SPECIES_CHARMANDER, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_D::
+   givemon      SPECIES_MACHOP, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_E::
+   givemon      SPECIES_GEODUDE_ALOLA, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_F::
+   givemon      SPECIES_SNIVY, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_G::
+   givemon      SPECIES_ROGGENROLA, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_H::
+   givemon      SPECIES_FENNEKIN, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_I::
+   givemon      SPECIES_MAKUHITA, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_J::
+   givemon      SPECIES_MAGBY, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_K::
+   givemon      SPECIES_HAPPINY, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_L::
+   givemon      SPECIES_DUSKULL, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_M::
+   givemon      SPECIES_VANILLITE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_N::
+   givemon      SPECIES_WEEDLE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_O::
+   givemon      SPECIES_SANDILE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_P::
+   givemon      SPECIES_COSMOG, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_Q::
+   givemon      SPECIES_WHISMUR, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_R::
+   givemon      SPECIES_JANGMO_O, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_S::
+   givemon      SPECIES_SOBBLE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
+LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_T::
+   givemon      SPECIES_TYMPOLE, 10
+   removeobject VAR_LAST_TALKED
+   setflag      FLAG_HIDE_STARTER_BALL_1
+   end
+
 
 LittlerootTown_BrendansHouse_2F_Movement_BrendanEnters:
 	walk_down

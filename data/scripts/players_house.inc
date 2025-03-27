@@ -57,7 +57,15 @@ LittlerootTown_MaysHouse_2F_EventScript_WallClock::
 	goto PlayersHouse_2F_EventScript_WallClock
 	end
 
+NeedToGetMyStarter_Script::
+    lockall
+    msgbox NeedToGetMyStarter_Text, MSGBOX_DEFAULT
+	releaseall
+	end
+
 PlayersHouse_2F_EventScript_WallClock::
+    goto_if_unset FLAG_HIDE_STARTER_BALL_1, NeedToGetMyStarter_Script
+    goto_if_unset FLAG_HIDE_STARTER_BALL_2, NeedToGetMyStarter_Script
 	goto_if_set FLAG_SET_WALL_CLOCK, PlayersHouse_2F_EventScript_CheckWallClock
 	msgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT
 	call PlayersHouse_2F_EventScript_SetWallClock
@@ -678,3 +686,16 @@ PlayersHouse_1F_Movement_PlayerApproachTVForLatiFemale:
 EventScript_RunningShoesManual::
 	msgbox PlayersHouse_1F_Text_RunningShoesManual, MSGBOX_SIGN
 	end
+
+NeedToGetMyStarter_Text::
+    .string "I should get my pokemon first.$"
+
+littleroot_Text_UncleIntro::
+	.string "Let's see how you handle it.$"
+
+littleroot_Text_UncleOutro::
+    .string "Looks like you can handle yourself.$"
+
+littleroot_Text_Uncleloses::
+    .string "You're ready, Go out there and/n"
+	.string "get every gym badge.$"
