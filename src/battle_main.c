@@ -4839,6 +4839,10 @@ s8 GetBattleMovePriority(u32 battler, u16 move)
     {
         priority++;
     }
+    else if (ability == ABILITY_MAESTRO && IsSoundMove(move))
+    {
+        priority++;
+    } 
     else if (ability == ABILITY_TRIAGE && IsHealingMove(move))
         priority += 3;
 

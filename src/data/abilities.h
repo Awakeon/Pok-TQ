@@ -2443,4 +2443,25 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Makes sound moves Ground\nSound moves hit Flying types."),
         .aiRating = 5,
     },
+
+    [ABILITY_MINI_NOSES] =
+    {
+        .name = _("Mini Noses"),
+        .description = COMPOUND_STRING("Moves hit 3 times.\nExtra hits do 25% of the damage."),
+        .aiRating = 10,
+    },
+
+    [ABILITY_CPU_COOLING] =
+    {
+        .name = _("CPU Cooling"),
+        .description = COMPOUND_STRING("Boost Sp. Atk during Snow or Tailwind."),
+        .aiRating = 3,
+    },
+
+    [ABILITY_MAESTRO] =
+    {
+        .name = _("Maestro"),
+        .description = COMPOUND_STRING("Sound moves have +1 Priority."),
+        .aiRating = 5,
+    },
 };

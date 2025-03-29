@@ -5171,6 +5171,19 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+            case ABILITY_CPU_COOLING:
+            if (!gSpecialStatuses[battler].switchInAbilityDone
+             && CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN)
+             && gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_TAILWIND)
+            {
+                gBattleScripting.savedBattler = gBattlerAttacker;
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_SPATK, 1, FALSE);
+                BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
+                effect++;
+            }
+            break;
         case ABILITY_DESOLATE_LAND:
             if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN_PRIMAL, TRUE))
             {
@@ -9768,6 +9781,10 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         break;
     case ABILITY_LUNAR_ENERGY:
         if (IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_CPU_COOLING:
+        if (IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SNOW))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_DEFEATIST:

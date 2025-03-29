@@ -1195,6 +1195,18 @@ static void Cmd_attackcanceler(void)
         return;
     }
 
+    if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_OFF
+        && GetBattlerAbility(gBattlerAttacker) == ABILITY_PARENTAL_BOND
+        && IsMoveAffectedByParentalBond(gCurrentMove, gBattlerAttacker)
+        && !(gAbsentBattlerFlags & (1u << gBattlerTarget))
+        && GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE)
+       {
+           gSpecialStatuses[gBattlerAttacker].parentalBondState = PARENTAL_BOND_1ST_HIT;
+           gMultiHitCounter = 3;
+           PREPARE_BYTE_NUMBER_BUFFER(gBattleScripting.multihitString, 1, 0)
+           return;
+       }
+
     if (AbilityBattleEffects(ABILITYEFFECT_MOVES_BLOCK, gBattlerTarget, 0, 0, 0))
         return;
     if (gMovesInfo[gCurrentMove].effect == EFFECT_PARALYZE && AbilityBattleEffects(ABILITYEFFECT_ABSORBING, gBattlerTarget, 0, 0, gCurrentMove))
@@ -3829,6 +3841,9 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gBattleStruct->moveDamage[gEffectBattler] = 1;
                 if (GetBattlerAbility(gEffectBattler) == ABILITY_PARENTAL_BOND)
                     gBattleStruct->moveDamage[gEffectBattler] *= 2;
+                    if (GetBattlerAbility(gEffectBattler) == ABILITY_MINI_NOSES)
+                    gBattleStruct->moveDamage[gEffectBattler] *= 2;
+                
 
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_MoveEffectRecoil;
