@@ -8275,10 +8275,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_WHISCASH] =
     {
         .baseHP        = 110,
-        .baseAttack    = 98,
+        .baseAttack    = 78,
         .baseDefense   = 73,
         .baseSpeed     = 60,
-        .baseSpAttack  = 86,
+        .baseSpAttack  = 76,
         .baseSpDefense = 71,
         .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
         .catchRate = 75,
