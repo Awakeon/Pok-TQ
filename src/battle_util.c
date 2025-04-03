@@ -200,6 +200,15 @@ static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
         .continuesMessage = B_MSG_WEATHER_TURN_STRONG_WINDS,
         .animation = B_ANIM_STRONG_WINDS,
     },
+
+    [BATTLE_WEATHER_FULL_MOON] =
+    {
+        .flag = B_WEATHER_FULL_MOON,
+        .rock = HOLD_EFFECT_NONE,
+        .endMessage = B_MSG_WEATHER_END_FULL_MOON,
+        .continuesMessage = B_MSG_WEATHER_TURN_FULL_MOON,
+        .animation = B_ANIM_FULL_MOON_CONTINUES,
+    },
 };
 
 static u32 CalcBeatUpPower(void)
@@ -4694,6 +4703,14 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         gBattleWeather = B_WEATHER_HAIL;
                         gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
                     }
+                    effect++;
+                }
+                break;
+            case WEATHER_FULL_MOON:
+                if (!(gBattleWeather & B_WEATHER_FULL_MOON))
+                {
+                    gBattleWeather = B_WEATHER_FULL_MOON;
+                    gBattleScripting.animArg1 = B_ANIM_FULL_MOON_CONTINUES;
                     effect++;
                 }
                 break;

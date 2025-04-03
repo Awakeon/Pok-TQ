@@ -6363,7 +6363,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_SUNNY_DAY,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_SunnyDay,
+        .battleAnimScript = gBattleAnimMove_Full_Moon,
         .validApprenticeMove = TRUE,
     },
 

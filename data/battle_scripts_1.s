@@ -4425,7 +4425,7 @@ BattleScript_EffectSunnyDay::
 	attackstring
 	ppreduce
 	call BattleScript_CheckPrimalWeather
-	setfieldweather BATTLE_WEATHER_SUN
+	setfieldweather BATTLE_WEATHER_FULL_MOON
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_ExtremelyHarshSunlightWasNotLessened:
