@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Tera Blast has correct effectiveness for every Tera Type")
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_WATER;    }
     PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_NORMAL;   }
     PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_GHOST;    }
-    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_PSYCHIC;  }
+    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_AURA;  }
     PARAMETRIZE { species = SPECIES_TOTODILE;  type = TYPE_GRASS;    }
     PARAMETRIZE { species = SPECIES_TOTODILE;  type = TYPE_ELECTRIC; }
     PARAMETRIZE { species = SPECIES_DRATINI;   type = TYPE_DRAGON;   }
@@ -58,8 +58,8 @@ SINGLE_BATTLE_TEST("Tera Blast has correct effectiveness for every Tera Type")
         ASSUME(gSpeciesInfo[SPECIES_DRATINI].types[1] == TYPE_DRAGON);
         ASSUME(gSpeciesInfo[SPECIES_SNEASEL].types[0] == TYPE_DARK);
         ASSUME(gSpeciesInfo[SPECIES_SNEASEL].types[1] == TYPE_ICE);
-        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[1] == TYPE_PSYCHIC);
+        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[0] == TYPE_AURA);
+        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[1] == TYPE_AURA);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(type); }
         OPPONENT(species);
     } WHEN {

@@ -889,7 +889,7 @@ static const union AnimCmd sSpriteAnim_TypeElectric[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypePsychic[] = {
-    ANIMCMD_FRAME(TYPE_PSYCHIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_AURA * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeIce[] = {
@@ -948,7 +948,7 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     [TYPE_WATER] = sSpriteAnim_TypeWater,
     [TYPE_GRASS] = sSpriteAnim_TypeGrass,
     [TYPE_ELECTRIC] = sSpriteAnim_TypeElectric,
-    [TYPE_PSYCHIC] = sSpriteAnim_TypePsychic,
+    [TYPE_AURA] = sSpriteAnim_TypePsychic,
     [TYPE_ICE] = sSpriteAnim_TypeIce,
     [TYPE_DRAGON] = sSpriteAnim_TypeDragon,
     [TYPE_DARK] = sSpriteAnim_TypeDark,

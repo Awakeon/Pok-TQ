@@ -17,7 +17,7 @@
 #define TYPE_WATER            12
 #define TYPE_GRASS            13
 #define TYPE_ELECTRIC         14
-#define TYPE_PSYCHIC          15
+#define TYPE_AURA          15
 #define TYPE_ICE              16
 #define TYPE_DRAGON           17
 #define TYPE_DARK             18

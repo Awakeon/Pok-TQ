@@ -1103,7 +1103,7 @@ static const u8 sTerrainToType[BATTLE_TERRAIN_COUNT] =
     [BATTLE_TERRAIN_VOLCANO]          = TYPE_FIRE,
     [BATTLE_TERRAIN_DISTORTION_WORLD] = TYPE_NORMAL,
     [BATTLE_TERRAIN_SPACE]            = TYPE_DRAGON,
-    [BATTLE_TERRAIN_ULTRA_SPACE]      = TYPE_PSYCHIC,
+    [BATTLE_TERRAIN_ULTRA_SPACE]      = TYPE_AURA,
     [BATTLE_TERRAIN_MOUNTAIN]         = (B_CAMOUFLAGE_TYPES >= GEN_5 ? TYPE_GROUND : TYPE_ROCK),
     [BATTLE_TERRAIN_PLAIN]            = (B_CAMOUFLAGE_TYPES >= GEN_4 ? TYPE_GROUND : TYPE_NORMAL),
 };
@@ -15657,7 +15657,7 @@ static void Cmd_settypetoterrain(void)
         terrainType = TYPE_FAIRY;
         break;
     case STATUS_FIELD_PSYCHIC_TERRAIN:
-        terrainType = TYPE_PSYCHIC;
+        terrainType = TYPE_AURA;
         break;
     default:
         terrainType = sTerrainToType[gBattleTerrain];

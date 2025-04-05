@@ -14399,7 +14399,7 @@ gBattleAnimMove_TerrainPulse::
 	jumpargeq 0x0, TYPE_ELECTRIC, TerrainPulseElectric
 	jumpargeq 0x0, TYPE_GRASS, TerrainPulseGrass
 	jumpargeq 0x0, TYPE_FAIRY, TerrainPulseFairy
-	jumpargeq 0x0, TYPE_PSYCHIC, TerrainPulsePsychic
+	jumpargeq 0x0, TYPE_AURA, TerrainPulsePsychic
 TerrainPulseNormal:
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_DRAGON_PULSE, 0, 12, 12, RGB_WHITE
 	waitforvisualfinish

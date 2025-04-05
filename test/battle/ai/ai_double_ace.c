@@ -4,8 +4,8 @@
 ASSUMPTIONS {
     ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
     ASSUME(GetMoveType(MOVE_CRUNCH) == TYPE_DARK);
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_PSYCHIC);
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] == TYPE_PSYCHIC);
+    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_AURA);
+    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] == TYPE_AURA);
 }
 
 AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of the Ace Mons if other options exist")

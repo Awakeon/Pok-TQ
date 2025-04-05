@@ -1177,7 +1177,7 @@ static const union AnimCmd sSpriteAnim_TypeElectric[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypePsychic[] = {
-    ANIMCMD_FRAME(TYPE_PSYCHIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_AURA * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TypeIce[] = {
@@ -1237,7 +1237,7 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     [TYPE_WATER] = sSpriteAnim_TypeWater,
     [TYPE_GRASS] = sSpriteAnim_TypeGrass,
     [TYPE_ELECTRIC] = sSpriteAnim_TypeElectric,
-    [TYPE_PSYCHIC] = sSpriteAnim_TypePsychic,
+    [TYPE_AURA] = sSpriteAnim_TypePsychic,
     [TYPE_ICE] = sSpriteAnim_TypeIce,
     [TYPE_DRAGON] = sSpriteAnim_TypeDragon,
     [TYPE_DARK] = sSpriteAnim_TypeDark,
@@ -1342,7 +1342,7 @@ static const union AnimCmd sSpriteAnim_TeraTypeElectric[] = {
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TeraTypePsychic[] = {
-    ANIMCMD_FRAME(TYPE_PSYCHIC * 4, 0, FALSE, FALSE),
+    ANIMCMD_FRAME(TYPE_AURA * 4, 0, FALSE, FALSE),
     ANIMCMD_END
 };
 static const union AnimCmd sSpriteAnim_TeraTypeIce[] = {
@@ -1382,7 +1382,7 @@ static const union AnimCmd *const sSpriteAnimTable_TeraType[NUMBER_OF_MON_TYPES]
     [TYPE_WATER] = sSpriteAnim_TeraTypeWater,
     [TYPE_GRASS] = sSpriteAnim_TeraTypeGrass,
     [TYPE_ELECTRIC] = sSpriteAnim_TeraTypeElectric,
-    [TYPE_PSYCHIC] = sSpriteAnim_TeraTypePsychic,
+    [TYPE_AURA] = sSpriteAnim_TeraTypePsychic,
     [TYPE_ICE] = sSpriteAnim_TeraTypeIce,
     [TYPE_DRAGON] = sSpriteAnim_TeraTypeDragon,
     [TYPE_DARK] = sSpriteAnim_TeraTypeDark,

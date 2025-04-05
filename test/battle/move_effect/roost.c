@@ -20,7 +20,7 @@ ASSUMPTIONS
     ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
     ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_GRASS);
     ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
-    ASSUME(GetMoveType(MOVE_CONFUSION) == TYPE_PSYCHIC);
+    ASSUME(GetMoveType(MOVE_CONFUSION) == TYPE_AURA);
     ASSUME(GetMoveType(MOVE_ICE_BEAM) == TYPE_ICE);
     ASSUME(GetMoveType(MOVE_DRAGON_BREATH) == TYPE_DRAGON);
     ASSUME(GetMoveType(MOVE_BITE) == TYPE_DARK);
@@ -317,8 +317,8 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[0] == TYPE_NORMAL);
         ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[1] == TYPE_FLYING);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] == TYPE_PSYCHIC);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_AURA);
+        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] == TYPE_AURA);
         PLAYER(SPECIES_SWELLOW) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

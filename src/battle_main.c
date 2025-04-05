@@ -6005,7 +6005,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
                 else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
                     return TYPE_FAIRY;
                 else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-                    return TYPE_PSYCHIC;
+                    return TYPE_AURA;
                 else //failsafe
                     return moveType;
             }

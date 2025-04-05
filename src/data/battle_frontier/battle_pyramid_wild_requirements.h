@@ -178,7 +178,7 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [8] = /* psychic types */
     {
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_AURA,
     },
     [9] = /* rock types */
     {

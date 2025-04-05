@@ -605,7 +605,7 @@ Edit [src/data/pokemon/species_info.h](https://github.com/rh-hideout/pokeemerald
 +        .baseSpeed     = 140,
 +        .baseSpAttack  = 194,
 +        .baseSpDefense = 120,
-+        .types = { TYPE_PSYCHIC, TYPE_PSYCHIC},
++        .types = { TYPE_AURA, TYPE_AURA},
 +        .catchRate = 3,
 +        .expYield = 255,
 +        .evYield_SpAttack  = 3,
