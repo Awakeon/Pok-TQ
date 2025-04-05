@@ -396,7 +396,7 @@ $(TYPESBWGFXDIR)/move_types_bw.4bpp: $(types:%=$(TYPESBWGFXDIR)/%.4bpp) $(contes
 
 $(TYPESBWGFXDIR)/move_types_bw.gbapal: $(TYPESBWGFXDIR)/move_types_bw_1.gbapal \
                                   $(TYPESBWGFXDIR)/move_types_bw_2.gbapal \
-                                  $(TYPESBWGFXDIR)/move_types_bw_3.gbapal
+                                  $(TYPESBWGFXDIR)/move_types_bw_3.gbapal 
 	@cat $^ >$@
 
 $(TYPESBWTERAGFXDIR)/tera_types_bw.4bpp: $(types:%=$(TYPESBWTERAGFXDIR)/%.4bpp)
