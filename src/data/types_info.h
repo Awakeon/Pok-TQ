@@ -359,7 +359,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Aura"),
         .generic = _("a AURA move"),
-        .palette = 14,
+        .palette = 15,
         .zMove = MOVE_SHATTERED_PSYCHE,
         .maxMove = MOVE_MAX_MINDSTORM,
         .teraTypeRGBValue = RGB(31, 14, 15),

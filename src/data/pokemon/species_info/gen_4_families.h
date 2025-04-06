@@ -4500,18 +4500,18 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sRioluLevelUpLearnset,
         .teachableLearnset = sRioluTeachableLearnset,
         .eggMoveLearnset = sRioluEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_LUCARIO}),
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_AURA_SPHERE, SPECIES_LUCARIO}),
     },
 
     [SPECIES_LUCARIO] =
     {
-        .baseHP        = 70,
+        .baseHP        = 90,
         .baseAttack    = 110,
         .baseDefense   = 70,
-        .baseSpeed     = 90,
+        .baseSpeed     = 104,
         .baseSpAttack  = 115,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_AURA),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 204,
         .evYield_Attack = 1,
