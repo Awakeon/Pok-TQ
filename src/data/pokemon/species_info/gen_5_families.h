@@ -9104,8 +9104,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_KLINK
     [SPECIES_KLINK] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 55,
+        .baseHP        = 55,
+        .baseAttack    = 65,
         .baseDefense   = 70,
         .baseSpeed     = 30,
         .baseSpAttack  = 45,
@@ -9119,7 +9119,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_PLUS, ABILITY_MINUS, ABILITY_CLEAR_BODY },
+        .abilities = { ABILITY_TRANSISTOR, ABILITY_STRONG_JAW, ABILITY_CLEAR_BODY },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Klink"),
@@ -9175,8 +9175,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_KLANG] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 80,
+        .baseHP        = 65,
+        .baseAttack    = 90,
         .baseDefense   = 95,
         .baseSpeed     = 50,
         .baseSpAttack  = 70,
@@ -9190,7 +9190,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_PLUS, ABILITY_MINUS, ABILITY_CLEAR_BODY },
+        .abilities = {   ABILITY_TRANSISTOR, ABILITY_STRONG_JAW, ABILITY_CLEAR_BODY },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Klang"),
@@ -9246,8 +9246,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_KLINKLANG] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 100,
+        .baseHP        = 70,
+        .baseAttack    = 110,
         .baseDefense   = 115,
         .baseSpeed     = 90,
         .baseSpAttack  = 70,
@@ -9261,7 +9261,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_STRONG_JAW, ABILITY_MINUS, ABILITY_CLEAR_BODY },
+        .abilities = {  ABILITY_TRANSISTOR, ABILITY_STRONG_JAW, ABILITY_CLEAR_BODY },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
         .speciesName = _("Klinklang"),
