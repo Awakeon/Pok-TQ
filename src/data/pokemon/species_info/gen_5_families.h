@@ -11748,8 +11748,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #if P_FAMILY_DEINO
     [SPECIES_DEINO] =
     {
-        .baseHP        = 52,
-        .baseAttack    = 65,
+        .baseHP        = 62,
+        .baseAttack    = 75,
         .baseDefense   = 50,
         .baseSpeed     = 38,
         .baseSpAttack  = 45,
@@ -11812,15 +11812,15 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDeinoLevelUpLearnset,
         .teachableLearnset = sDeinoTeachableLearnset,
         .eggMoveLearnset = sDeinoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ZWEILOUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_ZWEILOUS}),
     },
 
     [SPECIES_ZWEILOUS] =
     {
         .baseHP        = 72,
-        .baseAttack    = 85,
+        .baseAttack    = 95,
         .baseDefense   = 70,
-        .baseSpeed     = 58,
+        .baseSpeed     = 68,
         .baseSpAttack  = 65,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
@@ -11832,7 +11832,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_HUSTLE, ABILITY_DARK_AURA, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Zweilous"),
         .cryId = CRY_ZWEILOUS,
@@ -11879,7 +11879,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sZweilousLevelUpLearnset,
         .teachableLearnset = sZweilousTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 54, SPECIES_HYDREIGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_HYDREIGON}),
     },
 
     [SPECIES_HYDREIGON] =
@@ -11899,7 +11899,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_LEVITATE, ABILITY_HUSTLE, ABILITY_DARK_AURA },
+        .abilities = { ABILITY_HUSTLE, ABILITY_DARK_AURA, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Hydreigon"),
         .cryId = CRY_HYDREIGON,

@@ -133,8 +133,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Pounds the foe with\n"
             "forelegs or tail."),
         .effect = EFFECT_HIT,
-        .power = 40,
-        .type = TYPE_NORMAL,
+        .power = 50,
+        .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 35,
         .target = MOVE_TARGET_SELECTED,
@@ -11036,10 +11036,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Mud Bomb"),
         .description = COMPOUND_STRING(
-            "Throws a blob of mud to\n"
-            "damage. 30% speed drop."),
+            "Throws a blob of mud."
+            " Deals 1/8 damage to the target's ally."),
         .effect = EFFECT_HIT,
-        .power = 110,
+        .power = 100,
         .type = TYPE_GROUND,
         .accuracy = 85,
         .pp = 5,
@@ -11048,8 +11048,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ballisticMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
-            .chance = 30,
+            .moveEffect = MOVE_EFFECT_FLAME_BURST,
+            .self = TRUE,
         }),
         .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
         .contestCategory = CONTEST_CATEGORY_SMART,
@@ -14918,9 +14918,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Moonblast"),
         .description = COMPOUND_STRING(
             "Attacks with the power of\n"
-            "the moon. May lower Sp. Atk."),
+            "the moon. Does 50% more damage during full moon."),
         .effect = EFFECT_HIT,
-        .power = 95,
+        .power = 70,
         .type = TYPE_FAIRY,
         .accuracy = 100,
         .pp = 15,
