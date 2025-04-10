@@ -285,7 +285,7 @@
 #define TRAINER_JERRY_5                     279
 #define TRAINER_KAREN_1                     280
 #define TRAINER_GEORGIA                     281
-#define TRAINER_KAREN_2                     282
+#define TRAINER_JASON                       282
 #define TRAINER_KAREN_3                     283
 #define TRAINER_KAREN_4                     284
 #define TRAINER_KAREN_5                     285

@@ -562,8 +562,26 @@ PlayersHouse_2F_EventScript_Notebook::
 	end
 
 PlayersHouse_2F_EventScript_GameCube::
-	msgbox PlayersHouse_2F_Text_ItsAGameCube, MSGBOX_SIGN
+	msgbox DifficultySelect_Text, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, DifficultySelectHard
+	msgbox YouStayedOnNormalMode, MSGBOX_AUTOCLOSE
 	end
+
+DifficultySelectHard::
+    msgbox HardModeSelectedText, MSGBOX_AUTOCLOSE
+    increasedifficulty 
+	end
+
+DifficultySelect_Text:
+    .string "STOP MASHING A\p"
+	.string "WOULD YOU LIKE TO PLAY\n"
+    .string "ON HARD MODE?$"
+
+YouStayedOnNormalMode:
+    .string "You are on Normal Mode.$"
+
+HardModeSelectedText:
+    .string "Good Luck.$"
 
 PlayersHouse_2F_Text_ClockIsStopped:
 	.string "The clock is stopped…\p"

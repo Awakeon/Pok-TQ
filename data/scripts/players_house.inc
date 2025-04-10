@@ -697,5 +697,5 @@ littleroot_Text_UncleOutro::
     .string "Looks like you can handle yourself.$"
 
 littleroot_Text_Uncleloses::
-    .string "You're ready, Go out there and/n"
+    .string "You're ready, Go out there and\n"
 	.string "get every gym badge.$"

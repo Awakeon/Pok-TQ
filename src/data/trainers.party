@@ -5358,16 +5358,35 @@ Beautifly
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_KAREN_2 ===
-Name: KAREN
+=== TRAINER_JASON ===
+Name: Jason
 Class: School Kid
-Pic: School Kid F
-Gender: Female
+Pic: Youngster
+Gender: Male
 Music: Girl
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move
+Difficulty: Normal
 
 Shroomish
+Level: 26
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Whismur
+Level: 26
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+=== TRAINER_JASON ===
+Name: Jason
+Class: School Kid
+Pic: Youngster
+Gender: Male
+Music: Girl
+Double Battle: Yes
+AI: Check Bad Move
+Difficulty: Hard
+
+Breloom
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 

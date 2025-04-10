@@ -170,7 +170,6 @@ Debug_EventScript_Script_2::
 	end
 
 Debug_EventScript_Script_3::
-	release
 	end
 
 Debug_EventScript_Script_4::

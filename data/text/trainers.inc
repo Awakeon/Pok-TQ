@@ -4794,3 +4794,16 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
+
+Route135_Text_JasonIntro:
+	.string "I see you're new around here\n"
+	.string "let me show you how a real trainer!\l"
+	.string "Battles!$"
+
+Route135_Text_JasonDefeated:
+	.string "I lost to the new guy?\n"
+	.string "I really need to train more.$"
+
+Route135_Text_JasonPostBattle:
+	.string "If you keep this up you might,\n"
+	.string "beat Koga!$"
