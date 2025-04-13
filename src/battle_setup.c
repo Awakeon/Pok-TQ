@@ -1083,9 +1083,9 @@ void ConfigureTwoTrainersBattle(u8 trainerObjEventId, const u8 *trainerScript)
     gSelectedObjectEvent = trainerObjEventId;
     gSpecialVar_LastTalked = gObjectEvents[trainerObjEventId].localId;
 
-    if (gApproachingTrainerId == 0) 
+    if (gApproachingTrainerId == 0)
         TrainerBattleLoadArgs(trainerScript + 1);
-    else 
+    else
         TrainerBattleLoadArgsSecondTrainer(trainerScript + 1);
 
     BattleSetup_ConfigureTrainerBattle(trainerScript + 1);
@@ -1261,6 +1261,10 @@ static void CB2_EndTrainerBattle(void)
         if (InBattlePyramid() || InTrainerHillChallenge() || (!NoAliveMonsForPlayer()))
             SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
         else
+            SetMainCallback2(CB2_WhiteOut);
+    }
+    else if (DidPlayerForfeitNormalTrainerBattle())
+    {
             SetMainCallback2(CB2_WhiteOut);
     }
     else
