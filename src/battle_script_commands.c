@@ -1273,6 +1273,17 @@ static void Cmd_attackcanceler(void)
         return;
     }
 
+if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_OFF
+        && GetBattlerAbility(gBattlerAttacker) == ABILITY_MINI_NOSES
+        && IsMoveAffectedByParentalBond(gCurrentMove, gBattlerAttacker)
+        && !(gAbsentBattlerFlags & (1u << gBattlerTarget))
+        && GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE)
+       {
+           gSpecialStatuses[gBattlerAttacker].parentalBondState = PARENTAL_BOND_1ST_HIT;
+           gMultiHitCounter = 3;
+           PREPARE_BYTE_NUMBER_BUFFER(gBattleScripting.multihitString, 2, 0)
+           return;
+       }
 
     u32 abilityDef = GetBattlerAbility(gBattlerTarget);
     if (CanAbilityBlockMove(gBattlerAttacker,

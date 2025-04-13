@@ -3967,7 +3967,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks with a psychic\n"
             "wave of varying intensity."),
-        .effect = EFFECT_PSYWAVE,
+        .effect = EFFECT_LEVEL_DAMAGE,
         .power = 1,
         .type = TYPE_AURA,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 100 : 80,
