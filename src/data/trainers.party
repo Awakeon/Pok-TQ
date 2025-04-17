@@ -851,13 +851,13 @@ Roselia
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ROSE_5 ===
-Name: ROSE
-Class: Aroma Lady
-Pic: Aroma Lady
-Gender: Female
-Music: Female
-Double Battle: No
+=== TRAINER_NIKOLAI ===
+Name: NIKOLAI
+Class: Cooltrainer M
+Pic: Cooltrainer M
+Gender: Male
+Music: Cool
+Double Battle: Yes
 AI: Check Bad Move
 
 Breloom

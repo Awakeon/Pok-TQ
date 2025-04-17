@@ -177,10 +177,11 @@ Debug_EventScript_Script_3::
 
 HDifficultySelectHard::
     msgbox HardModeSelectedText, MSGBOX_AUTOCLOSE
-    decreasedifficulty 
+    increasedifficulty 
 	end
 
 Debug_EventScript_Script_4::
+    increasedifficulty 
 	release
 	end
 

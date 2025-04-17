@@ -569,7 +569,7 @@ PlayersHouse_2F_EventScript_GameCube::
 
 DifficultySelectHard::
     msgbox HardModeSelectedText, MSGBOX_AUTOCLOSE
-    decreasedifficulty 
+    increasedifficulty 
 	end
 
 DifficultySelect_Text:
