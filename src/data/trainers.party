@@ -853,7 +853,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_NIKOLAI ===
 Name: NIKOLAI
-Class: Cooltrainer M
+Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool

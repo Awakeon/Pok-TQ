@@ -1995,7 +1995,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_TRANSISTOR] =
     {
         .name = _("Transistor"),
-        .description = COMPOUND_STRING("Ups Electric-type moves."),
+        .description = COMPOUND_STRING("Ups Electric-type moves by 50%."),
         .aiRating = 6,
     },
 

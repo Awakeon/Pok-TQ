@@ -1959,21 +1959,19 @@ F_TRAINER_FEMALE |
         },
     },
 #line 854
-    [DIFFICULTY_NORMAL][TRAINER_ROSE_5] =
+    [DIFFICULTY_NORMAL][TRAINER_NIKOLAI] =
     {
 #line 855
-        .trainerName = _("ROSE"),
+        .trainerName = _("NIKOLAI"),
 #line 856
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 857
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender =
-#line 858
-F_TRAINER_FEMALE | 
 #line 859
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 860
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
 #line 861
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
