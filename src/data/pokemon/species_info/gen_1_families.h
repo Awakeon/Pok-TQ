@@ -1434,11 +1434,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_WEEDLE] =
     {
         .baseHP        = 50,
-        .baseAttack    = 70,
-        .baseDefense   = 30,
+        .baseAttack    = 75,
+        .baseDefense   = 50,
         .baseSpeed     = 55,
         .baseSpAttack  = 20,
-        .baseSpDefense = 45,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
         .catchRate = 255,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 39 : 52,
@@ -1508,7 +1508,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_KAKUNA] =
     {
         .baseHP        = 60,
-        .baseAttack    = 70,
+        .baseAttack    = 75,
         .baseDefense   = 80,
         .baseSpeed     = 25,
         .baseSpAttack  = 25,
@@ -18809,12 +18809,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_AERODACTYL
     [SPECIES_AERODACTYL] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 105,
-        .baseDefense   = 65,
+        .baseHP        = 100,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
         .baseSpeed     = 130,
         .baseSpAttack  = 60,
-        .baseSpDefense = 75,
+        .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 180 : 202,
@@ -18824,7 +18824,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_ROCK_HEAD, ABILITY_PRESSURE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_DRAGONS_MAW, ABILITY_STRONG_JAW, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Aerodactyl"),
         .cryId = CRY_AERODACTYL,
@@ -18882,12 +18882,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_AERODACTYL_MEGA] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 135,
-        .baseDefense   = 85,
-        .baseSpeed     = 150,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 95,
+        .baseHP        = 100,
+        .baseAttack    = 130,
+        .baseDefense   = 90,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
         .catchRate = 45,
         .expYield = 215,
@@ -18897,7 +18897,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_ROCK_HEAD, ABILITY_ROCK_HEAD },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Aerodactyl"),
         .cryId = CRY_AERODACTYL_MEGA,

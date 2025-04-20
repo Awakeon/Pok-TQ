@@ -860,17 +860,65 @@ Music: Cool
 Double Battle: Yes
 AI: Check Bad Move
 
-Breloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Growlithe-Hisui @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Flame Wheel  
+- Covet  
+- Rock Slide  
+- Will-O-Wisp  
 
-Gloom
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Shellos @ Ability Shield  
+Ability: Storm Drain  
+EVs: 252 HP / 4 Def / 252 SpD  
+Careful Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Bubble Beam  
+- Recover  
+- Protect  
+- Mud Shot  
 
-Roselia
-Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Roggenrola @ Smooth Rock  
+Ability: Sand Stream  
+EVs: 252 HP / 252 Atk / 4 Def  
+Adamant Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Rock Tomb  
+- Low Sweep  
+- Mud-Slap  
+- Sandstorm  
+
+Cacnea @ Razor Claw  
+Ability: Sand Force  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Pin Missile  
+- Spiky Shield  
+- Bullet Seed  
+- Thunder Punch  
+
+Spewpa @ Leftovers  
+Ability: Friend Guard  
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Pollen Puff  
+- Protect  
+- Recover  
+- Rage Powder  
+
+Aerodactyl-Mega @ Aerodactylite  
+Ability: Rock Head    
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Wing Attack  
+- Rock Slide  
+- Bite  
+- Tailwind  
 
 === TRAINER_DUSTY_1 ===
 Name: DUSTY
