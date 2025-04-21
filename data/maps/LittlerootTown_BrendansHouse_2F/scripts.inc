@@ -348,7 +348,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_H::
    end
 
 LittlerootTown_BrendansHouse_2F_EventScript_Starter_Ball_2_I::
-   givemon      SPECIES_MAKUHITA, 10
+   givemon      SPECIES_MANKEY, 10
    removeobject VAR_LAST_TALKED
    setflag      FLAG_HIDE_STARTER_BALL_1
    end

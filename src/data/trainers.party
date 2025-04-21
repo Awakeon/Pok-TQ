@@ -859,6 +859,7 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Check Bad Move
+Difficulty: Hard
 
 Growlithe-Hisui @ Sitrus Berry  
 Ability: Intimidate  
@@ -5411,14 +5412,20 @@ Name: Jason
 Class: School Kid
 Pic: Youngster
 Gender: Male
-Music: Girl
+Music: Boy
 Double Battle: Yes
 AI: Check Bad Move
 Difficulty: Normal
 
-Shroomish
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Growlithe-Hisui @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Flame Wheel  
+- Covet  
+- Rock Slide  
+- Will-O-Wisp  
 
 Whismur
 Level: 26
