@@ -5412,12 +5412,12 @@ Name: Jason
 Class: School Kid
 Pic: Youngster
 Gender: Male
-Music: Boy
+Music: Male
 Double Battle: Yes
 AI: Check Bad Move
 Difficulty: Normal
 
-Growlithe-Hisui @ Sitrus Berry  
+Chimchar @ Sitrus Berry  
 Ability: Intimidate  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
@@ -5427,16 +5427,22 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Slide  
 - Will-O-Wisp  
 
-Whismur
-Level: 26
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Tandemaus @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Adamant Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Flame Wheel  
+- Covet  
+- Rock Slide  
+- Will-O-Wisp  
 
 === TRAINER_JASON ===
 Name: Jason
 Class: School Kid
 Pic: Youngster
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: Yes
 AI: Check Bad Move
 Difficulty: Hard
