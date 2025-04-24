@@ -2464,4 +2464,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Sound moves have +1 Priority."),
         .aiRating = 5,
     },
+
+    [ABILITY_SOUL_GRIPPER] =
+    {
+        .name = _("Soul Gripper"),
+        .description = COMPOUND_STRING("Heals 35% max HP on a KO."),
+        .aiRating = 5,
+    },
 };
